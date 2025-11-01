@@ -62,14 +62,14 @@ jobs:
       run: npm run build
       
     - name: Upload coverage reports
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v5
       with:
         file: ./coverage.xml
         flags: backend
         name: backend-coverage
         
     - name: Upload frontend coverage
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v5
       with:
         directory: src/frontend/coverage
         flags: frontend
